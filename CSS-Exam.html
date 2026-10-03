@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fabric Industry Business Website </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <style>
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     border: black;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
+.b1 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: linear-gradient(transparent 100%), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlUm-Hum1SNjOMwtutTomyxcYUNixuzPMYhQ&s);
+  background-position: top;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+}
+
+.logo1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.menu a:hover {
+  color: red;
+}
+.search {
+    padding: 5px 5px;
+    width: 20px;
+  border-radius: 4px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.free {
+     padding: 5px;
+    background-color: rgb(233, 123, 143);
+    color: white;
+}
+.free:hover {
+    cursor: pointer;
+}
+.heading {
+  position: relative;
+  margin: 55px;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  text-align: right;
+}
+.learn {
+    padding: 5px;
+    background-color: rgb(233, 123, 143);
+}
+.learn:hover {
+    cursor: pointer;
+}
+.white {
+    margin-top: -50px;
+    padding: 100px 70px;
+    background-color: aliceblue;
+}
+.us {
+    padding: 5px;
+    background-color: white;
+    color: rgb(233, 123, 143);
+    margin-bottom: 150px;
+}
+.us:hover {
+    cursor: pointer;
+}
+.image {
+    margin-left: 40px;
+}
+.details {
+    position: relative;
+    top: -200px;
+    float: right;
+    right: 250px;
+    margin-top: 10px;
+}
+.details p {
+    color: gray;
+}
+.about {
+    padding: 7px;
+    background-color: white;
+    color: rgb(233, 123, 143);
+}
+.year {
+     position: relative;
+    top: -30px;
+    float: right;
+    right: -10px;
+    margin-top: 10px;
+}
+.experience h1{
+    color: rgb(233, 123, 143);
+}
+.experience .big {
+    color: rgb(233, 123, 143);
+    font-size: 40px;
+    font-weight: bold;
+}
+.fabrics {
+    position: relative;
+    float: right;
+    right: -60px;
+    top: -50px;
+}
+.read {
+    margin-top: 20px;
+    padding: 7px;
+    background-color: rgb(233, 123, 143);
+    color: white;
+}
+.read:hover {
+    cursor: pointer;
+}
+.gray {
+    padding: 50px;
+    background-color: rgb(245, 239, 239);
+}
+.our {
+    padding: 6px;
+    background-color: white;
+    color:rgb(233, 123, 143);
+    text-align: center;
+    justify-content: center;
+}
+.our:hover {
+    cursor: pointer;
+}
+.services {
+    text-align: center;
+    justify-content: center;
+}
+.services h1 {
+    margin-top: 15px;
+}
+.cards {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+     text-align: center;
+}
+.card {
+    margin: 15px;
+     margin-top: 15px;
+    width: 250px;
+    height: 300px;
+     background-color: white;
+      text-align: center;
+      border-radius: 10px;
+       box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.card3 {
+    margin: 15px;
+     margin-top: 15px;
+    width: 250px;
+    height: 300px;
+     background-color: gray;
+      text-align: center;
+      border-radius: 10px;
+       box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card .icon {
+    font-size: 60px;
+    padding: 20px;
+}
+.card3 .icon {
+    font-size: 60px;
+    padding: 20px;
+}
+.card p1, .card3 p1 {
+    margin-top: 5px;
+}
+.card p, .card3 p {
+    margin-top: 70px;
+}
+.pricing {
+    padding: 50px;
+    background-color:  aliceblue;
+}
+.pro {
+    text-align: center;
+    justify-content: center;
+}
+.pro h1 {
+    margin-top: 15px;
+}
+.pro .cards {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+     text-align: center;
+}
+.pro .card {
+    margin: 15px;
+     margin-top: 15px;
+    width: 280px;
+    height: 320px;
+     background-color:white;
+      text-align: center;
+      border-radius: 10px;
+     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.pro .card2 {
+    margin: 15px;
+     margin-top: 15px;
+    width: 280px;
+    height: 320px;
+     background-color: black;
+     color: white;
+      text-align: center;
+      border-radius: 10px;
+       box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.pro h4 {
+    margin-top:20px;
+    font-size: 15px;
+    color: gray;
+}
+.price {
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(233, 123, 143);
+    color: white;
+}
+.card h5 {
+    font-size: 15px;
+    color: gray;
+    padding: 15px;
+}
+.card2 h5 {
+    font-size: 15px;
+    color: white;
+    padding: 15px;
+}
+.purchase {
+    padding: 7px;
+    background-color:rgb(233, 123, 143);
+    color: white;
+}
+.purchase:hover {
+    cursor: pointer;
+}
+.purchase2 {
+    padding: 7px;
+    background-color: white;
+    color: rgb(233, 123, 143);
+}
+.purchase2:hover {
+    cursor: pointer;
+}
+ .footer {
+            margin-top: 50px;
+            background-color: black;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .contain {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section {
+             text-align: left;
+            margin: 30px;
+        }
+        .footer-section h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color:  rgb(233, 123, 143);
+        }
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            font-size: 15px;
+            margin: 8px 0;
+        }
+
+        .footer-section a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+        .footer-section i {
+            padding: 5px;
+            margin-top: 5px;
+        }
+        font {
+            color:  rgb(233, 123, 143);
+        }
+        </style>
+    </head>
+    <body>
+
+<div class="b1">
+     <!-- Navbar -->
+      <header class="navbar">
+      <div class="logo1">FABRIC<br>MOST TRUSTED</div>
+     <nav class="menu">
+      <a href="#">HOME</a>
+      <a href="#">PAGES</a>
+      <a href="#">SERVICE</a>
+      <a href="#">PORTFOLIO</a>
+      <a href="#">BLOG</a>
+    <a href="#" class="contact">CONTACT</a>
+    </nav>
+     <div class="search">
+      <input type="text" placeholder="🔍" size="1">
+    </div>
+    <button class="free">FREE QUOTE</button>
+      </header>
+
+      <div class="heading">
+        <h1>The Textile Collection for the Classy</h1>
+        <button class="learn">LEARN MORE</button>
+        <button class="us">CONTACT US</button>
+      </div>
+</div>
+
+<section class="white">
+    <div class="image">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtq-a8Cu6iTzP_3uFc72_tq_JOtazi0Tg62g&s" width="300" height="200">
+    </div>
+    <div class="details">
+        <button class="about">ABOUT US</button>
+        <h2>Construct Something<br> Innovative Togather</h2>
+        <p>Materials will be materials produced using filaments or yarn, and thay 
+            are<br> utilized to make widetest scops of items like dress and modern<br> merchandise.</p>
+    </div>
+    <div class="year">
+        <div class="experience">
+            <h1><big>58</big></h1>
+            <p>Years Experience</p>
+        </div>
+        <div class="fabrics">
+            <p>✔️Production Of Fabrics</p>
+            <p>✔️Exportation Globally</p>
+            <p>✔️Great Clients Support</p>
+        </div>
+        <button class="read">READ MORE</button>
+    </div>
+</section>
+
+<section class="gray">
+    <div class="services">
+        <button class="our">OUR SERVICES</button>
+        <h1>We Provide Best Services</h1>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">🎟️</div>
+                <h3>Fabric Dyeing</h3>
+                <p>Read More</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎰</div>
+                <h3>Stich Fabric</h3>
+                <p1>The material business is a significant worldwide
+                    Innovation with rangw occurring.
+                </p1>
+                 <p>Read More</p>
+            </div>
+
+            <div class="card3">
+                <div class="icon">🎀</div>
+                <h3>Synthetics Wool</h3>
+                <p1>The material business is a significant worldwide
+                    Innovation with rangw occurring.
+                </p1>
+                 <p>Read More</p>
+            </div>
+
+             <div class="card">
+                <div class="icon">🧰</div>
+                <h3>Cotton Velvet</h3>
+                <p1>The material business is a significant worldwide
+                    Innovation with rangw occurring.
+                </p1>
+                 <p>Read More</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="pricing">
+    <div class="pro">
+         <button class="our">OUR PRICING</button>
+        <h1>Professional Pricing</h1>
+        <div class="cards">
+            <div class="card">
+                <h4>POLYSTER FEBRICS</h4>
+                <button class="price">$59.99</button>
+                <h5>We Guarantee You Always</h5><hr>
+                <h5>Certified Textures Materials</h5><hr>
+                <h5>Particular and Yearly</h5>
+                <button class="purchase">PURCHASE NOW</button>
+            </div>
+
+             <div class="card2">
+                <h4>Materials FEBRICS</h4>
+                <button class="price">$199.99</button>
+                <h5>We Guarantee You Always</h5><hr>
+                <h5>Certified Textures Materials</h5><hr>
+                <h5>Particular and Yearly</h5>
+                <h5>25 Examination Mission</h5>
+                <button class="purchase2">PURCHASE NOW</button>
+            </div>
+
+             <div class="card">
+                <h4>COTTON FEBRICS</h4>
+                <button class="price">$99.99</button>
+                <h5>We Guarantee You Always</h5><hr>
+                <h5>Certified Textures Materials</h5><hr>
+                <h5>Particular and Yearly</h5>
+                <button class="purchase">PURCHASE NOW</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="footer">
+                <div class="contain">
+                    <div class="footer-content">
+
+                        <div class="footer-section">
+                            <h2>FABRIC</h2>
+                            <h4>MOST TRUSTED</h4><br>
+                            <p>We are running wellness habitats in<br>
+                                the a large portion of the urban<br>
+                                communities in USA.
+                            </p>
+                       <i class="fab fa-facebook" style="color: white;"></i></a>
+                       <i class="fab fa-twitter"></i></a>
+                      <i class="fab fa-youtube" style="color: white;"></i></a>
+                       <i class="fab fa-linkedin" style="color: white;"></i></a>
+                        </div>
+
+                        <div class="footer-section">
+                            <h3>GET IN TOUCH</h3>
+                            <ul>
+                                <li><a href="#">📍66 Guild Streer, North Town.</a></li>
+                                <hr>
+                                <li><a href="#">🗳️info@example.com</a></li>
+                                <li><a href="#">📞+44)123 456 789</a></li>
+                                <li><a href="#">🧰Mon-Sat:9am-5pm</a></li>
+                            </ul>
+                        </div>
+
+                            <div class="footer-section">
+                                <h3>OUR SERVICES</h3>
+                                <ul>
+                                    <li>Fabric Dyeing</li>
+                                    <li>Stich Fabric</li>
+                                    <li>Synthetics Wool</li>
+                                    <li>Cotton Velvet</li>
+                                </ul>
+                            </div>
+
+                             <div class="footer-section">
+                                <h3>GALLERY</h3>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx-PR8c-OoHdUCxbhnYIEMKQdBQs5j_q_0Yw&s" width="80" height="60">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStTOQdraQdYKAeV_AVenywpMo5a6C3ZBMgjchRGkDKKrd-oTZEcBnwqJXECU2Vxo4tqs4&usqp=CAU" width="80" height="60">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIloboc_bNPT5I6tHk8eL863bH2RfJg6w8dql8yGU_ZFBd_xi7H6IgchWfY78D4lZzQEk&usqp=CAU" width="80" height="60"><br>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXsauKvNNyrvLbBrsQYg1ZQfsOIT4lxQftExKmeosdvqxWPRrUigtP0JDVUQD9kxy6P8I&usqp=CAU" width="80" height="60">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyMBsBZZL1FVNOfhQOkNeuLaqIK2yyYIok4448yctQTxxxGcv3USDwVmoSejZBTsvSRSM&usqp=CAU" width="80" height="60">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJHi5GBj8ma2MBWbyT4n9s9BsUW2__OqyNnC5W2GkN6OMJW0_iWbXZBq3cNDhQZHBx5W0&usqp=CAU" width="80" height="60">
+                             </div>
+                    </div>
+                             <h4>&copy;2025 Fabric is Powered by <font>Chitrakoot Web</font></h4>
+                </div>
+</div>
+    </body>
+</html>

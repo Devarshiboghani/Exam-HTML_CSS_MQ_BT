@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Online Shoes Store</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     
+        <style>
+              * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: black;
+        }
+          body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 2px solid black;
+            background-color: white;
+         }
+            /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+          /* Header & Navigation */
+        .header {
+            background: linear-gradient(90deg, black 80%, #383eeb 20%);
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+         .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+         .nav-link {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-link a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+         .nav-link a:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+            .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+          /* Container */
+        .container1 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 220px;
+        }
+          /* Header & Navigation */
+        .header1 {
+            background: white;
+            color: black;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+         .nav-container1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+         .nav-menu1 {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-menu1 a {
+            background-color: white;
+            color: gray;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+         .nav-menu1 a:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+          .search {
+            color: black;
+            border-radius: 4px;
+         }
+            /* Hero Section */
+        .hero {
+           background-color: black;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+         .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+         .hero p {
+            color: gray;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+          .btn {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: blue;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+         .btn:hover {
+            transform: translateY(-2px);
+        }
+    
+.container .image {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    float: left;
+    left: 100px;
+    top: -20px;
+}
+.center {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+.details {
+    background-color: white;
+}
+.grid{
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    text-align: center;
+    width: 350px;
+    overflow: hidden;
+    background-color: white;
+    margin: 0px;
+    padding: 5px;
+}
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+.product-card {
+    width: 360px;
+    margin: 0;
+    padding: 0;
+}
+.product-card img {
+    width: 300px;
+    height: 250px;
+    margin: 0;
+}
+.card-header {
+    padding: 0px;
+    margin: 0px;
+    text-align: none;
+    margin-bottom: 8px;
+}
+.card-header h3 {
+    font-weight: bold;
+     cursor: pointer;
+    margin-bottom: 8px;
+}
+.card-header p {
+    width: 100%;
+    margin: 1px;
+    color: #7c7b7b;
+    font-weight: bold;
+     margin-bottom: 8px;
+}
+.price {
+    color: blue;
+    font-weight: bold;
+}
+.white {
+    margin-top: 80px;
+}
+p {
+    color: #7c7b7b;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+  /* Footer */
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+         .footer a{
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+        .link {
+            display: grid;
+            gap: 5px;
+        }
+      
+   /* Mobile Portrait - 1 column */
+        @media (max-width: 575.98px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Mobile Landscape - 2 columns */
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Tablet - 2 columns */
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Laptop - 3 columns */
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+          /* Desktop - 3 columns */
+        @media (min-width: 1200px) and (max-width:1399.98px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+
+          /* Desktop - 3 columns */
+        @media (min-width: 1399px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+         /* Mobile Portrait - 1 column */
+        @media (max-width: 575.98px) {
+            .link {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Mobile Landscape - 2 columns */
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .link {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Tablet - 2 columns */
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .link {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Laptop - 3 columns */
+        @media (min-width: 992px) {
+            .link {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        </style>
+    </head>
+    <body>
+
+          <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav-container">
+                <div class="logo">mojo</div>
+                <ul class="nav-link">
+                    <li><a href="#article">Articles</a></li>
+                    <li><a href="#shop" style="color: #383eeb;">Shop</a></li>
+                    <li><a href="#magazine">Magazine</a></li>
+                    <li><a href="#help">Help</a></li>
+                </ul>
+
+                 <ul class="nav-menu">
+                    <li><a href="#john">John Deo</a></li>
+                    <li><a href="#cart">Cart(1)</a></li>
+                    <li><a href="#men">Men</a></li>
+                    <li><a href="#women">Women</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <header class="header1">
+        <div class="container1">
+            <nav class="nav-container1">
+                <ul class="nav-menu1">
+                    <li><a href="#">POPULAR</a></li>
+                    <li><a href="#">MOST VIEWED</a></li>
+                    <li><a href="#">NEWEST</a></li>
+                    <li><a href="#">RANDOM</a></li>
+                </ul>
+                 <button class="search">
+                <input type="text" placeholder="🔍">
+            </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="articles">
+        <div class="container">
+            <img src="https://www.mojoonline.co/cdn/shop/files/snapedit_1703405613110.jpg?v=1703406297&width=540" class="image">
+            <div class="center">
+            <h1>Hiroshi Fijiwara x Nike</h1>
+            <p>Following initial images released last week, we bring<br>
+                you Hiroshi Fujiwara collaboration with Nike.
+            </p>
+            <button class="btn">WATCH THE VIDEO</button>
+            </div>
+            </div>
+    </section>
+
+     <section class="" id="shop">
+        <div class="white">
+                <center>
+                <h1>Other Great Shoes</h1>
+                <p>Each shoe is based off of a similar aesthetic as well as<br>
+                being tailored to your general taste.</p>
+                </center>
+                        </div>
+
+                        <center>
+         <div class="grid">
+                    <div class="card">
+                        <div class="product-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6GHT255M5m_ZIYRl3ajIC4uQyFOgbe4XbGlUFFZTDJE-wEDZ0NpWkBN16lJ5cY2ikhWA&usqp=CAU" class="image">
+                        </div>
+                        <div class="details">
+                             <div class="card-header">
+                            <h3>Nike Roshe Gold</h3>
+                            <p>24 Left in Stock</p>
+                            <div class="price">$120</div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="product-card">
+                            <img src="https://www.walkaroo.in/cdn/shop/files/WS3036-DARKGREY-GENTS.jpg?v=1753514503" class="image">
+                        </div>
+                        <div class="details">
+                             <div class="card-header">
+                            <h3>Nike Roshe France</h3>
+                            <p>10 Left in Stock</p>
+                            <div class="price">$95</div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="product-card">
+                    <img src="https://relaxofootwear.com/cdn/shop/files/SX0951G-CDCP-1.jpg?v=1744868703&width=800"  alt="">
+                        </div>
+                        <div class="details">
+                             <div class="card-header">
+                            <h3>Nike Flyknit Racer</h3>
+                            <p>48 Left in Stock</p>
+                            <div class="price">$85</div>
+                        </div>
+                        </div>
+                    </div>
+                        </center>
+                    </div>
+                    <center><p>Want to change your preferences?</p></center>
+     </section>
+
+      <!-- Previous button -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#shop" data-bs-slide="prev" style="color: blue;">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            
+            <!-- Next button -->
+            <button class="carousel-control-next" type="button" data-bs-target="#shop" data-bs-slide="next" style="color: blue;">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+     <footer class="footer">
+        <div class="container">
+
+            <div class="link">
+            <h4>C O P Y R I G H T &copy; ALL RIGHTS RESERVED 2015</h4>
+             <footer class="social-footer">
+                                      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                                      <a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i></a>
+                                      <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+            </footer>
+                <footer class="help">
+            <a href="#help">HELP</a> /
+            <a href="#service">CUSTOMER SERVICE</a>
+            </footer>
+        </div>
+     </footer>
+    </body>
+</html>
